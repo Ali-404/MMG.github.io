@@ -63,7 +63,7 @@ section.categoriesSection li .icon{
 
 /* responsive */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:760px) {
     
 
     section.categoriesSection ul{
