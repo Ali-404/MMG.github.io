@@ -44,3 +44,23 @@ section.homeSection::before{
     font-size: 4.5rem;
     font-weight: bolder;
 }
+
+/* responsive */
+
+@media screen and (max-width:600px) {
+    section.homeSection{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .bigTitle {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bigTitle h1 {
+        font-size: 3rem;
+    }
+    
+    
+}

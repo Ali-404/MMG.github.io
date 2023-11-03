@@ -56,3 +56,22 @@ section.categoriesSection li:hover {
 section.categoriesSection li .icon{
     font-size: 6rem;
 }
+
+
+
+
+
+/* responsive */
+
+@media screen and (max-width:600px) {
+    
+
+    section.categoriesSection ul{
+    
+        flex-wrap: wrap;
+    }
+
+
+   
+    
+}
