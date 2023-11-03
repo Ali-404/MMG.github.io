@@ -1,0 +1,40 @@
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 1.5rem;
+}
+
+nav > img {
+    max-width: 80px;
+}
+
+nav .link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #151821;
+    position: relative;
+}
+
+
+.link::after {
+    content: '';
+    width: 0%;
+    position: absolute;
+    
+    border-radius: 25px;
+    background-color: black;
+    top: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.link:hover::after  {
+    width: 100%;
+    padding: 1.5px;
+
+}

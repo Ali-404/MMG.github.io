@@ -1,0 +1,58 @@
+section.categoriesSection {
+    background-color: #232939;
+    position: relative;
+}
+
+section.categoriesSection > * {
+    color: #E4D4AD;
+}
+
+section.categoriesSection .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+section.categoriesSection h1 {
+    font-size: 4rem;
+ 
+    text-align: center;
+    padding: 5rem 0;
+    text-decoration: underline;
+}
+
+
+section.categoriesSection ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+
+section.categoriesSection li {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+section.categoriesSection li:hover {
+    color: rgb(247, 247, 247);
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+section.categoriesSection li .icon{
+    font-size: 6rem;
+}

@@ -1,0 +1,46 @@
+section.homeSection {
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #e4d4ade4;
+    position: relative;
+    
+}
+
+section.homeSection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    background-image: url('../../public/images/city.jpg');
+    background-blend-mode: overlay, normal;
+   
+    background-position: center;
+    background-size: cover;
+
+    z-index: -1;
+}
+
+.bigTitle {
+    min-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+.bigTitle img {
+    max-width: 400px;
+}
+
+.bigTitle h1 {
+    font-size: 4.5rem;
+    font-weight: bolder;
+}
