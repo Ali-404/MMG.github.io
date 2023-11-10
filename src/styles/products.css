@@ -1,10 +1,11 @@
 /* #232939
 #E4D4AD */
-
-.products {
+.container{
+    padding:0 2rem;
     background-color: #E4D4AD;
-
+    min-height: 100vh;
 }
+
 
 .products * {
     color: #232939;
@@ -14,7 +15,7 @@
 
 .products .newModSection {
     background-color: #E4D4AD;
-    padding: 2rem 5rem;
+    padding: 2rem 0;
     display: flex;
     justify-content: center;
   
@@ -80,4 +81,79 @@
 
 .products .newModSection #right > div:hover,.products .newModSection #left > img:hover {
     transform: scale(1.2);
+}
+
+.cardsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.card {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    /* max-width: 420px; */
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+.card .interactionBar{
+    width: 100%;
+    background-color: #232939;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 1rem;
+}
+
+.Picture{
+   
+}
+.PressedIcon{
+    transition: 0.3s ease-in-out;
+}
+
+.PressedIcon:hover{
+    transform: scale(1.5);
+}
+.PressedIcon:hover > * {
+    color: rgb(244, 99, 99);
+}
+
+.PressedIcon * {
+    color: #E4D4AD;
+}
+
+.moreButton {
+    padding: 0.6rem 1rem;
+    background-color: #232939;
+    border-radius: 15px;
+    color: #E4D4AD;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border: none;
+    outline: none;
+}
+
+.moreButton:hover{
+    transform: scale(1.2);
+}
+
+.cardsContainer .btnsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
 }

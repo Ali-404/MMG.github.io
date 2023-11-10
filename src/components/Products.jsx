@@ -1,7 +1,12 @@
 
 import '../styles/products.css'
+import Menu from './Menu'
 
 export default function Products() {
+
+
+  const all = ["tt","dafljhadf"]
+
   return (
     <div className='products container'>
       <div className='newModSection'>
@@ -20,7 +25,10 @@ export default function Products() {
       
       </div>
 
-    
+      {/* random Mods 15/0 */}
+
+      {/* load 15 */}
+      <Menu />
 
     </div>
   )
