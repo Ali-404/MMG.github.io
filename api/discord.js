@@ -1,4 +1,4 @@
-const botToken = 'OTAxMjQxOTQ0NDQ4MDUzMjc5.GUjxlM.a5k_Zr-lf6rjfyS2HK-f-wYk50kL_zK5KbgeYw'; 
+const botToken = 'OTAxMjQxOTQ0NDQ4MDUzMjc5.GjWFOq.mQctDZ4XpqcJzRMtHljOaZ7olfbcaKqef6PpLA'; 
 const channelId = '887736758056402984'; // Replace with your actual channel ID
 
 // api/discord.js
