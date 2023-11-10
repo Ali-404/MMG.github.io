@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="MAIN">
         <HomeSection />
-        <CategoriesSection />
+        <CategoriesSection  />
         <Footer/>
     </div>
   )

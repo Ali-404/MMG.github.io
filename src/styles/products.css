@@ -1,0 +1,83 @@
+/* #232939
+#E4D4AD */
+
+.products {
+    background-color: #E4D4AD;
+
+}
+
+.products * {
+    color: #232939;
+    transition: 0.3s ease-in-out;
+    /* background: #E4D4AD; */
+}
+
+.products .newModSection {
+    background-color: #E4D4AD;
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.products .newModSection h3 {
+    font-style: italic;
+    padding: 10px 5px;
+}
+
+.products .newModSection h4 {
+    font-style: italic;
+    max-width: 60%;
+    text-wrap: wrap;
+    padding: 10px;
+    font-style: normal;
+    font-weight: bold;
+
+}
+
+.products .newModSection img {
+    width: 60%;
+    border-radius: 15px;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.products .newModSection #left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.products .newModSection #right {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 10px;
+    padding: 2.5rem 0;
+    
+}
+
+.products .newModSection #right > div {
+    width: 100%;
+    max-width: 300px;
+    padding: 5px 0;
+    background-image: url('../../public/images/noimg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+.products .newModSection #right > div:hover,.products .newModSection #left > img:hover {
+    transform: scale(1.2);
+}

@@ -23,7 +23,6 @@ section.categoriesSection h1 {
     text-decoration: underline;
 }
 
-
 section.categoriesSection ul {
     width: 100%;
     display: flex;
@@ -74,4 +73,34 @@ section.categoriesSection li .icon{
 
    
     
+}
+
+/* nav bar */
+
+section.Nav {
+    min-height: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #E4D4AD;
+
+}
+
+section.Nav * {
+    color: #232939;
+}
+
+section.Nav .content{
+    position: unset;
+    top: auto;
+    left: auto;
+    transform: none;
+}
+section.Nav li {
+    font-size: 1rem;
+}
+
+section.Nav li .icon {
+    font-size: 3rem;
 }

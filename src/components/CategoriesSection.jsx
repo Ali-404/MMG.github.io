@@ -3,11 +3,20 @@ import '../styles/categoriesSection.css'
 
 import { FaCar, FaCode, FaPerson,FaGun,FaMap,FaToolbox } from "react-icons/fa6";
 
-export default function HomeSection() {
+export default function CategoriesSection({noTitle = false, isNav = false}) {
+
+  var nextClass = ''
+
+  if (isNav){
+    nextClass = 'Nav'
+  }
+
   return (
-    <section className='categoriesSection' >
+    <section className={'categoriesSection ' + nextClass} >
       <div className='content'>
-       <h1>Categories</h1>
+
+        {!noTitle ? (<h1>Categories</h1>) : (<></>)}
+       
        <ul>
         <li> 
           <FaCode className='icon' />
