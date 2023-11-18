@@ -4,26 +4,32 @@ import {useEffect, useState} from 'react'
 import { FaShare, FaDownload} from "react-icons/fa6";
 import client, { urlFor } from '../sanity.js';
 
-export default function Menu() {
+export default function Menu({filterType}) {
     const [mods, setMods] = useState([])
     useEffect(() => {
         
         const data = client.fetch(`*`)
         data.then(res => {
-          setMods(res)
+          if (!filterType){
+            setMods(res)
+            
+          }else{
+            setMods(res.filter(mod => mod.type === filterType))
+          }
         })
         .catch(err => {console.error(err)})
-    }, [])
+    },[filterType])
+
+
+ 
    
   return (
     <div className='cardsContainer'>
     {mods?.map((mod) => (
-      <Card key={mod._id} image={mod.image} title={mod.title} />
+      <Card key={mod._id} image={mod.image} title={mod.title}  />
     ))}
     <div className='btnsContainer'>
-        <button className='moreButton'>Previus</button>
-        <span >1/15</span>
-        <button className='moreButton'>Next</button>
+        <a  href='/Store'  className='moreButton'  >Home</a>
     </div>
     </div>
   )

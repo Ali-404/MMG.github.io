@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import NoPages from "./pages/NoPages";
 import Store from "./pages/Store";
+import Filtred from "./pages/Filtred";
+
 
 export default function App() {
   return (
@@ -14,6 +16,7 @@ export default function App() {
         <Route>
           <Route index element={<Home />} path="/" />
           <Route element={<Store/>} path="/store"/> 
+          <Route element={<Filtred />} path="/filtered"/> 
           <Route path="*" element={<NoPages />} />
         </Route>
       </Routes>

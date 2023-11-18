@@ -5,7 +5,6 @@ import Menu from './Menu'
 export default function Products() {
 
 
-  const all = ["tt","dafljhadf"]
 
   return (
     <div className='products container'>
@@ -16,12 +15,6 @@ export default function Products() {
           <h4>Here the title of the new one</h4>
         </div>
 
-        <div id='right'>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
       
       </div>
 
