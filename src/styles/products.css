@@ -117,9 +117,7 @@
     padding: 0.5rem 1rem;
 }
 
-.Picture{
-   
-}
+
 .PressedIcon{
     transition: 0.3s ease-in-out;
 }
@@ -152,6 +150,8 @@
 }
 
 .cardsContainer .btnsContainer{
+    align-self: flex-end;
+    justify-self: flex-end;
     display: flex;
     align-items: center;
     justify-content: center;

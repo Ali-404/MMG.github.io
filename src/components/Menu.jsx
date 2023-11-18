@@ -1,14 +1,25 @@
+
 import '../styles/products.css'
-import { FaHeart, FaShare, FaDownload} from "react-icons/fa6";
+import {useEffect, useState} from 'react'
+import { FaShare, FaDownload} from "react-icons/fa6";
+import client, { urlFor } from '../sanity.js';
 
 export default function Menu() {
-    const elements = []
-    for (let i = 0; i < 15; i++){
-        elements.push(<Card />)
-    }
+    const [mods, setMods] = useState([])
+    useEffect(() => {
+        
+        const data = client.fetch(`*`)
+        data.then(res => {
+          setMods(res)
+        })
+        .catch(err => {console.error(err)})
+    }, [])
+   
   return (
     <div className='cardsContainer'>
-    {elements}
+    {mods?.map((mod) => (
+      <Card key={mod._id} image={mod.image} title={mod.title} />
+    ))}
     <div className='btnsContainer'>
         <button className='moreButton'>Previus</button>
         <span >1/15</span>
@@ -20,16 +31,19 @@ export default function Menu() {
 
 
 
-const Card = () => {
-    
+const Card = ({image, title}) => {
+
   return (
     <div className='card'>
-        <img className="Picture" src="https://img.gta5-mods.com/q75/images/gta-5-pc-mod-ohmymodz-essential-v1-mod-menu-trainer-lua/f0f426-picgta5840x472.png" />
+    {image && (
+      <>
+        <img className="Picture"  src={urlFor(image).url()} alt='' />
         <div className='interactionBar'>
-            <FaHeart className='PressedIcon' />
             <FaDownload className='PressedIcon' />
             <FaShare className='PressedIcon' />
         </div>
+      </>
+    )}
     </div>
   )
 }
